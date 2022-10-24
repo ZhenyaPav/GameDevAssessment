@@ -150,6 +150,8 @@ namespace UnityTemplateProjects
                 translation *= 10.0f;
             }
             
+            Debug.Log(Input.mouseScrollDelta,this);
+
             // Modify movement by a boost factor (defined in Inspector and modified in play mode through the mouse scroll wheel)
             boost += Input.mouseScrollDelta.y * 0.2f;
             translation *= Mathf.Pow(2.0f, boost);
